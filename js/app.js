@@ -4,21 +4,25 @@
 function PageNavigation() {
     <!-- vars -->
     var nav = $(".nav");
+    var homePageJumbo = $(".home-page-jumbo");
+    var shopPageJumbo = $(".shop-page-jumbo");
+    var contactPageJumbo = $(".contact-page-jumbo");
     <!-- functions -->
     this.openHomePage = function() {
-        $(".home-page-jumbo").show();
-        $(".contact-page-jumbo").hide();
-        $(".shop-page-jumbo").hide();
+        homePageJumbo.show();
+        contactPageJumbo.hide();
+        shopPageJumbo.hide();
     };
     this.openShopPage = function() {
-        $(".home-page-jumbo").hide();
-        $(".contact-page-jumbo").hide();
-        $(".shop-page-jumbo").show();
+        homePageJumbo.hide();
+        contactPageJumbo.hide();
+        shopPageJumbo.show();
+        shopPageJumbo.find("h2").animate({"left": "0"}, "fast");
     };
     this.openContactPage = function() {
-        $(".home-page-jumbo").hide();
-        $(".shop-page-jumbo").hide();
-        $(".contact-page-jumbo").show();
+        homePageJumbo.hide();
+        shopPageJumbo.hide();
+        contactPageJumbo.show();
     };
     <!-- events -->
     nav.on("click.nav", ".home-button", this.openHomePage);

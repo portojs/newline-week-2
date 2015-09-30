@@ -4,3 +4,8 @@
 .contact-page-jumbo {
     display: none;
 }
+.jumbotron h2 {
+    background-color: darkgrey;
+    position: relative;
+    left: -1600px;
+}
