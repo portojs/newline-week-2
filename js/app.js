@@ -9,15 +9,14 @@ function PageNavigation() {
     var contactPageJumbo = $(".contact-page-jumbo");
     <!-- functions -->
     this.openHomePage = function() {
-        homePageJumbo.show();
-        contactPageJumbo.hide();
         shopPageJumbo.hide();
+        contactPageJumbo.hide();
+        homePageJumbo.show();
     };
     this.openShopPage = function() {
         homePageJumbo.hide();
         contactPageJumbo.hide();
         shopPageJumbo.show();
-        shopPageJumbo.find("h2").animate({"left": "0"}, "fast");
     };
     this.openContactPage = function() {
         homePageJumbo.hide();

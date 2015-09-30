@@ -6,6 +6,15 @@
 }
 .jumbotron h2 {
     background-color: darkgrey;
-    position: relative;
-    left: -1600px;
+}
+.jumbotron .row div {
+    padding: 30px;
+    border: 0 solid;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+.jumbotron .row div:hover {
+    background-color: lightgrey;
 }
