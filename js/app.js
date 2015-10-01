@@ -16,6 +16,9 @@ function PageNavigation() {
         shopPageJumbo.hide();
         contactPageJumbo.hide();
         homePageJumbo.show();
+        $(".shop-page-middle").hide();
+        $(".contact-page-middle").hide();
+        $(".home-page-middle").show();
     };
     this.openShopPage = function() {
         $(this).addClass("active");
@@ -24,15 +27,20 @@ function PageNavigation() {
         homePageJumbo.hide();
         contactPageJumbo.hide();
         shopPageJumbo.show();
+        $(".home-page-middle").hide();
+        $(".contact-page-middle").hide();
+        $(".shop-page-middle").show();
     };
     this.openContactPage = function() {
         $(this).addClass("active");
         $(this).closest(".nav").find(".shop-button").removeClass("active");
         $(this).closest(".nav").find(".home-button").removeClass("active");
-
         homePageJumbo.hide();
         shopPageJumbo.hide();
         contactPageJumbo.show();
+        $(".home-page-middle").hide();
+        $(".shop-page-middle").hide();
+        $(".contact-page-middle").show();
     };
     this.showRegForm = function() {
         $(this).closest(".jumbotron").find(".home-page-reg-form").slideToggle();

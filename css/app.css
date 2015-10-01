@@ -1,4 +1,4 @@
-.home-page-jumbo {
+.jumbo-section {
     text-align: center;
 }
 .home-page-reg-form {
@@ -11,6 +11,12 @@
     display: none;
 }
 .contact-page-jumbo {
+    display: none;
+}
+.shop-page-middle {
+    display: none;
+}
+.contact-page-middle {
     display: none;
 }
 .jumbotron h2 {
@@ -26,4 +32,11 @@
 }
 .jumbotron .row div:hover {
     background-color: lightgrey;
+}
+.shop-page-middle .row div {
+    padding: 30px;
+    border: 0 solid;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
 }
