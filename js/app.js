@@ -33,10 +33,14 @@ function PageNavigation() {
         shopPageJumbo.hide();
         contactPageJumbo.show();
     };
+    this.showRegForm = function() {
+        $(this).closest(".jumbotron").find(".home-page-reg-form").slideToggle();
+    };
     <!-- events -->
     nav.on("click.nav", ".home-button", this.openHomePage);
     nav.on("click.nav", ".shop-button", this.openShopPage);
     nav.on("click.nav", ".contact-button", this.openContactPage);
+    $(".jumbotron").on("click.form", ".signup-button", this.showRegForm);
 }
 
 $(document).ready(function(){

@@ -1,3 +1,9 @@
+.home-page-jumbo {
+    text-align: center;
+}
+.home-page-reg-form {
+    display: none;
+}
 .shop-page-jumbo {
     display: none;
 }
