@@ -9,16 +9,26 @@ function PageNavigation() {
     var contactPageJumbo = $(".contact-page-jumbo");
     <!-- functions -->
     this.openHomePage = function() {
+        $(this).addClass("active");
+        $(this).closest(".nav").find(".shop-button").removeClass("active");
+        $(this).closest(".nav").find(".contact-button").removeClass("active");
         shopPageJumbo.hide();
         contactPageJumbo.hide();
         homePageJumbo.show();
     };
     this.openShopPage = function() {
+        $(this).addClass("active");
+        $(this).closest(".nav").find(".home-button").removeClass("active");
+        $(this).closest(".nav").find(".contact-button").removeClass("active");
         homePageJumbo.hide();
         contactPageJumbo.hide();
         shopPageJumbo.show();
     };
     this.openContactPage = function() {
+        $(this).addClass("active");
+        $(this).closest(".nav").find(".shop-button").removeClass("active");
+        $(this).closest(".nav").find(".home-button").removeClass("active");
+
         homePageJumbo.hide();
         shopPageJumbo.hide();
         contactPageJumbo.show();
