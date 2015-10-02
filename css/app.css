@@ -21,7 +21,6 @@ JUMBO
 }
 
 .jumbotron h2 {
-    color: darkgrey;
     font-weight: 800;
 }
 
@@ -39,10 +38,6 @@ JUMBO
     -moz-border-radius: 20px;
     border-radius: 20px;
     transition: background-color 0.2s;
-}
-
-.jumbotron .row div:hover {
-    background-color: lightgrey;
 }
 
 
@@ -64,22 +59,36 @@ MAIN AREA
     border-radius: 20px;
 }
 
-
-
-/*************************************************
-FOOTER
-**************************************************/
-
-.footer {
-    color: #bbbbbb;
+.shop-page-middle-ocean img {
+    max-width: 100%;
 }
 
+.shop-page-middle-ocean p {
+    text-align: center;
+    padding: 5px 0 0 0;
+}
 
 
 /*************************************************
 COLOR
 **************************************************/
 
+.jumbotron h2 {
+    color: darkgrey;
+}
+
+.jumbotron .row div:hover {
+    background-color: lightgrey;
+}
+
 .home-page-middle p {
     color: #878787;
+}
+
+.shop-page-middle-ocean .row {
+    color: #aaaaaa;
+}
+
+.footer {
+    color: #bbbbbb;
 }
