@@ -20,7 +20,14 @@
     display: none;
 }
 .jumbotron h2 {
-    background-color: darkgrey;
+    color: darkgrey;
+    font-weight: 800;
+}
+.footer {
+    color: #bbbbbb;
+}
+.home-page-middle p {
+    color: #878787;
 }
 .jumbotron .row div {
     padding: 30px;
