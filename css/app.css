@@ -1,40 +1,37 @@
+/*************************************************
+GENERAL
+**************************************************/
+
 h2, h4 {
     font-family: 'PT Sans Caption', sans-serif;
 }
+
 p {
     font-family: 'Merriweather', serif;
 }
+
+
+
+/*************************************************
+JUMBO
+**************************************************/
+
 .jumbo-section {
     text-align: center;
 }
-.home-page-reg-form {
-    display: none;
-}
-.home-page-login-form {
-    display: none;
-}
-.shop-page-jumbo {
-    display: none;
-}
-.contact-page-jumbo {
-    display: none;
-}
-.shop-page-middle {
-    display: none;
-}
-.contact-page-middle {
-    display: none;
-}
+
 .jumbotron h2 {
     color: darkgrey;
     font-weight: 800;
 }
-.footer {
-    color: #bbbbbb;
+
+.shop-page-jumbo,
+.contact-page-jumbo,
+.home-page-reg-form,
+.home-page-login-form {
+    display: none;
 }
-.home-page-middle p {
-    color: #878787;
-}
+
 .jumbotron .row div {
     padding: 30px;
     border: 0 solid;
@@ -43,13 +40,46 @@ p {
     border-radius: 20px;
     transition: background-color 0.2s;
 }
+
 .jumbotron .row div:hover {
     background-color: lightgrey;
 }
+
+
+
+/*************************************************
+MAIN AREA
+**************************************************/
+
+.shop-page-middle,
+.contact-page-middle {
+    display: none;
+}
+
 .shop-page-middle .row div {
     padding: 30px;
     border: 0 solid;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+}
+
+
+
+/*************************************************
+FOOTER
+**************************************************/
+
+.footer {
+    color: #bbbbbb;
+}
+
+
+
+/*************************************************
+COLOR
+**************************************************/
+
+.home-page-middle p {
+    color: #878787;
 }
