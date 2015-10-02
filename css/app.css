@@ -10,7 +10,9 @@ p {
     font-family: 'Merriweather', serif;
 }
 
-
+img {
+    max-width: 100%;
+}
 
 /*************************************************
 JUMBO
@@ -51,22 +53,33 @@ MAIN AREA
     display: none;
 }
 
-.shop-page-middle .row div {
-    padding: 30px;
-    border: 0 solid;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+#shop-ocean {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.shop-page-middle-ocean img {
-    max-width: 100%;
+#shop-ocean li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
 }
 
-.shop-page-middle-ocean p {
+#shop-ocean li p {
     text-align: center;
     padding: 5px 0 0 0;
 }
+
+
+
+/*************************************************
+MAIN AREA
+**************************************************/
+
+.footer {
+    clear: both;
+}
+
 
 
 /*************************************************
@@ -85,8 +98,9 @@ COLOR
     color: #878787;
 }
 
-.shop-page-middle-ocean .row {
-    color: #aaaaaa;
+#shop-ocean li {
+    background-color: #f5f5f5;
+    color: #bdc3c7;
 }
 
 .footer {
